@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MapApp_Task4.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Pin a location based on Lat. and Long." HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <StackLayout Padding="10">
+            <Label Text="Options:"/>
+            <Label Text="Name"/>
+            <Entry x:Name="EntryName"/>
+            <Label Text="Latitude" Margin="0,24,0,0"/>
+            <Entry Keyboard="Numeric" Text="17.4753314" x:Name="EntryLatitude"/>
+            <Label Text="Longitude" Margin="0,24,0,0"/>
+            <Entry Keyboard="Numeric" Text="78.4828939" x:Name="EntryLongitude"/>
+            <Button Text="Find Coordinates" x:Name="ButtonCoords" Clicked="ButtonCoords_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
